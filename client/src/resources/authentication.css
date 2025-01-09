@@ -10,12 +10,24 @@
 }
 
 .register input{
-  background-color: transparent ;
+  background-color: transparent !important ;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid rgb(22,28,81);
+  color:rgba(255, 255, 255, 0.758);
 }
 
 input:focus{
   outline: none !important;
-  box-shadow: none;
+  box-shadow: none !important;
+  border-bottom: 1px solid rgb(22,28,81) !important;
+}
+
+label , a{
+  /* color: rgba(255, 255, 255, 0.755) !important; */
+  color: rgb(255, 255, 255, 0.758) !important;
+}
+
+.register h1{
+ font-size: 25px;
+ color: white;
 }

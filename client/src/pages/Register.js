@@ -5,6 +5,10 @@ import React from "react";
 import '../resources/authentication.css'
 
 function Register() {
+
+  const onFinish=(values)=>{
+    console.log(values)
+  }
   return (
     <div className="register">
       <div className="row justify-content-center align-items-center w-100 h-100">
@@ -20,7 +24,9 @@ function Register() {
           </div>
         </div>
         <div className="col-md-5">
-          <Form layout="vertical">
+          <Form layout="vertical" onFinish={onFinish}>
+          <h1>EXPENSE-TRACKER REGISTER</h1>
+          <br></br><br></br>
             <Form.Item label="Name" name="name">
               <Input />
             </Form.Item>
@@ -35,7 +41,7 @@ function Register() {
 
             <div className="d-flex justify-content-between align-items-center">
               <Link to="/login">Already Registered , Click Here To Login</Link>
-              <button className="primary">REGISTER</button>
+              <button className="primary" type="submit">REGISTER</button>
             </div>
           </Form>
         </div>
